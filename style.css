@@ -1,0 +1,89 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: row;
+    flex-direction: column;
+    width: 100%;
+}
+
+.logo {
+    background-color: rgb(33, 44, 64);
+    align-content: center;
+}
+
+.logo img {
+    width: 100px;
+    padding: 10px 50px;
+}
+
+.menu-bar {
+    background-color: rgb(53, 67, 93);
+    color: white;  
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0 30px;
+    padding: 10px 0;
+    display: flex;
+    gap: 30px;
+}
+
+main {
+    background-color: rgb(227, 227, 227);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 50px;
+}
+
+#shop-holiday {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(255, 123, 0);
+}
+
+.holiday-gift-guides {
+    background-image: url(/assets\ 2/bg-image.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.find-gift {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
