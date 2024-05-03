@@ -18,6 +18,7 @@ nav {
 .logo img {
     width: 100px;
     padding: 10px 50px;
+    cursor: pointer;
 }
 
 .menu-bar {
@@ -33,8 +34,14 @@ nav {
     gap: 30px;
 }
 
+.menu-bar li {
+    cursor: pointer;
+}
+
 main {
     background-color: rgb(227, 227, 227);
+    display:flex;
+    justify-content: center;
 }
 
 .content {
@@ -42,6 +49,7 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 20px 50px;
+    max-width: 1000px;
 }
 
 #shop-holiday {
@@ -76,14 +84,25 @@ main {
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .cards img {
     width: 200px;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
+    margin: 10px;
+    cursor:pointer;
 }
 
+.banner {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+}
