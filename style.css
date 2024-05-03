@@ -1,7 +1,9 @@
-body {
+/* CSS RESET */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 nav {
@@ -11,18 +13,17 @@ nav {
 }
 
 .logo {
-    background-color: rgb(33, 44, 64);
-    align-content: center;
+    background-color: #232F3E;
 }
 
 .logo img {
-    width: 100px;
+    width: 200px;
     padding: 10px 50px;
     cursor: pointer;
 }
 
 .menu-bar {
-    background-color: rgb(53, 67, 93);
+    background-color: #354758;
     color: white;  
 }
 
@@ -49,37 +50,79 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 20px 50px;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
-#shop-holiday {
+.shop-holiday {
     color: white;
-    font-weight: bold;
-    background-color: rgb(255, 123, 0);
+    text-align: center;
+    padding: 5px;
+    background-color: #F56500;
 }
 
 .holiday-gift-guides {
-    background-image: url(/assets\ 2/bg-image.png);
+    background-image: url(assets\ 2/bg-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .find-gift {
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     padding-top: 0;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.card-extra {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 23.5%;
+}
+
+.items-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 10px;
+}
+
+.item {
+    width: 100%;
+    flex-basis: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.item img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit:cover;
 }
 
 .card-title {
     display: flex;
     align-items: center;
     gap: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .cards {
@@ -88,13 +131,19 @@ main {
     flex-wrap: wrap;
 }
 
-.cards img {
-    width: 200px;
+.card {
     height: 250px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 10px;
-    margin: 10px;
-    cursor:pointer;
+
 }
 
 .banner {
@@ -105,4 +154,35 @@ main {
 
 .banner img {
     width: 100%;
+    cursor: pointer;
+}
+
+footer {
+    display: row;
+    flex-direction: column;
+    width: 100%;
+}
+
+.back-top {
+    background-color: #354758;
+    text-align: center;
+    padding: 10px;
+}
+
+.back-top a {
+    color: white;
+}
+
+.big-logo {
+    background-color: #232F3E;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-logo img {
+    width: 300px;
+    padding: 10px 50px;
+    cursor: pointer;
 }
