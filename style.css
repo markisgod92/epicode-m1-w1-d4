@@ -60,6 +60,11 @@ main {
     background-color: #F56500;
 }
 
+.shop-holiday a {
+    text-decoration: none;
+    color: white;
+}
+
 .holiday-gift-guides {
     background-image: url(assets\ 2/bg-image.png);
     background-size: cover;
