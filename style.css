@@ -6,6 +6,11 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
 nav {
     display: row;
     flex-direction: column;
@@ -61,7 +66,6 @@ main {
 }
 
 .shop-holiday a {
-    text-decoration: none;
     color: white;
 }
 
@@ -114,12 +118,22 @@ main {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    position: relative;
+    font-size: 14px;
 }
 
 .item img {
     aspect-ratio: 1/1;
     width: 100%;
     object-fit:cover;
+}
+
+.new {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 35px;
+    right: 0;
 }
 
 .card-title {
